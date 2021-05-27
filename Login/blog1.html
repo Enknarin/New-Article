@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Shop</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <header><center>
+       <h3>Blog Travel</h3>
+    </center>
+     
+    </header>
+    <div class="table-wrapper">
+      <table class="table-users">
+        <tr>
+          <th>Topic</th>
+          <th>Blog</th>
+       <br>
+          <th>Action</th>
+        </tr>
+      </table>
+      <button class="btn btn-add">Add Blog</button>
+      <a href="../admin.html">
+        <button class="btn btn-add">Back</button>
+      </a>
+    
+    </div>
+ 
+     <!--Add Modal  -->
+   
+    <div class="add-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Add New Blog</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="topic" placeholder="topic">
+            <input type="text" name="blog" placeholder="blog">
+            <button class="btn btn-modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Edit Modal -->
+    <div class="edit-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Edit Blog</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="topic" placeholder="topic">
+            <input type="text" name="blog" placeholder="blog">
+              <button class="btn btn-modal">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAVKsHM5VjOIvqgrZHzRD6nPeB2WTfLlx0",
+              authDomain: "logintest-47650.firebaseapp.com",
+              databaseURL: "https://logintest-47650-default-rtdb.firebaseio.com",
+              projectId: "logintest-47650",
+              storageBucket: "logintest-47650.appspot.com",
+              messagingSenderId: "47663588451",
+              appId: "1:47663588451:web:c17145ee0c597dcf2d4456",
+              measurementId: "G-0LDMX7PV5Z"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script src="./blog1.js"></script>
+</body>
+</html>
