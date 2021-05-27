@@ -390,7 +390,7 @@ form.l{
 	-moz-transition: all 1s ease 0s;
 	-o-transition: all 1s ease 0s;
 	transition: all 1s ease 0s;
-    width: 350px;
+    width: 180px;
 }
 .menu-icon .cart a {
 	color: #333;
