@@ -13,7 +13,7 @@ function myFunction(id) {
         taskContainer.innerHTML = `
         <div> 
             <h3>${task.topic}</h3>
-            <p>${task.blog}</p>
+            <p>${task.blog}</p> 
         </div>`
     }else{
         console.log("No Document");
@@ -27,7 +27,7 @@ function myFunction(id) {
 db.collection("Food").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         const task = doc.data();
-        task.id = doc.id;
+        task.id= doc.id;
         // console.log(doc.id, " => ", doc.data().topic);
         taskButton.innerHTML += `<div>
         <a class="btn-topic" data-id="${task.id}" href="#">${task.topic}</a>

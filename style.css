@@ -54,6 +54,7 @@ body {
 	font-size: 14px;
 	color: #000;
 	overflow-x: hidden;
+	
 }
 img {
     max-width: 100%;
@@ -61,8 +62,8 @@ img {
 }
 
 img.p {
-    max-width: 350px;
-	height: 200px;
+    max-width: 400px;
+	height: 250px;
 }
 img.indexpic {
     max-width: 350px;
@@ -1169,4 +1170,8 @@ form.l{
     width: 80%;
     height: 300px;
     margin-left: 850px;
+}
+.imgfirebase{
+	margin-left: 300px;
+	margin-top: 50x;
 }
