@@ -1,10 +1,10 @@
 const db = firebase.firestore();
-const taskContainer = document.getElementById('task-container');
-const taskButton = document.getElementById('task-button');
+const taskContainer = document.getElementById('task-container4');
+const taskButton = document.getElementById('task-button4'); //toppic
 
 
 function myFunction(id) {
-    var docRef = db.collection('Electrical').doc(id);
+    var docRef = db.collection('Electrical4').doc(id);
     docRef.get().then((doc) => {
     if(doc.exists){
         console.log("Document Data", doc.data());
@@ -24,7 +24,7 @@ function myFunction(id) {
 
   }
 
-db.collection("Electrical").get().then((querySnapshot) => {
+db.collection("Electrical4").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         const task = doc.data();
         task.id = doc.id;
@@ -40,4 +40,5 @@ db.collection("Electrical").get().then((querySnapshot) => {
 
         })
     });
+    
 });
