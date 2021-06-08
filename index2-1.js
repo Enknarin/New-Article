@@ -55,11 +55,16 @@ function myFunction(id) {
     taskContainer.innerHTML += `
     
     <div>
-    
-    <div class="container">
-    <p>${task.topic}</p>
-    
+    <div class="col-md-4 col-sm-6 col-xs-6">
+    <div class="type-post">        
+        <div class="blog-content">
+            
+            <div class="entry-content">
+                 <p>${task.topic}</p>
+            </div>
+        </div>
     </div>
+</div>
     </div>`
     
     })
