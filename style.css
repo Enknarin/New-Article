@@ -75,6 +75,11 @@ img.indexAir {
 	height: 130px;
 	padding: 20px 20px;
 }
+img.picepost {
+    max-width: 100%;
+	height: auto;
+	padding: 20px 20px;
+}
 a {
     outline: 0 !important;
 }
@@ -1175,3 +1180,12 @@ form.l{
 	margin-left: 300px;
 	margin-top: 50x;
 }
+
+
+.post {
+	margin:.5em 0 1.5em;
+	border-bottom:1px solid #d3ebe1;
+	padding-bottom:1.5em;
+	font:normal 15px 'Cabin', sans-serif;
+	color:#305e58;
+  }
