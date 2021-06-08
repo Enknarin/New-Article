@@ -4,7 +4,7 @@ const taskButton = document.getElementById('task-button');
 
 
 function myFunction(id) {
-    var docRef = db.collection('Travel').doc(id);
+    var docRef = db.collection('test').doc(id);
     docRef.get().then((doc) => {
     if(doc.exists){
         console.log("Document Data", doc.data());
@@ -23,7 +23,7 @@ function myFunction(id) {
     })
 
   }
-  db.collection("Travel").get().then((querySnapshot) => {
+  db.collection("test").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         const task = doc.data();
         task.id= doc.id;
@@ -42,7 +42,7 @@ function myFunction(id) {
         })
     });
 
-  db.collection("Travel").get().then((querySnapshot) => {
+  db.collection("test").get().then((querySnapshot) => {
 
     querySnapshot.forEach((doc) => {
     
@@ -60,7 +60,10 @@ function myFunction(id) {
         <div class="blog-content">
             
             <div class="entry-content">
+                 <p>${task.pic}</p>
                  <p>${task.topic}</p>
+                 <p>${task.des}</p>
+                 
             </div>
         </div>
     </div>
