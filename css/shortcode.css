@@ -1335,7 +1335,7 @@
 .blog-post .type-post .blog-content .entry-meta {
 	display: block;
 	margin: 0 auto 15px;
-	width: 50%;
+	width: 100%;
 }
 .type-post .entry-content blockquote {
 	border-left: none;
