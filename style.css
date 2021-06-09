@@ -1195,7 +1195,7 @@ form.l{
   
 .Mh2 {
     font-family: 'Prompt', sans-serif;
-	font: size 64px;
+	font: size 70px;
 }
 .Mh3 {
 	
@@ -1218,4 +1218,14 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.box {  
+    line-height:4pt;
+    height:56pt;
+}
+.box p {
+    line-height:14pt;
+    height:56pt;
+    overflow:hidden;
 }
