@@ -53,6 +53,7 @@
 	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
 	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
 
 
 	<!--[if lt IE 9]>
@@ -84,6 +85,7 @@
 								<span class="icon-bar"></span>
 							</button>
 							<a href="index.html" class="navbar-brand">New <span>Article </span></a>
+
 						</div>
 						<!-- Menu Icon -->
 						<div class="menu-icon">
@@ -126,8 +128,7 @@
 
 								</li>
 
-								<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
-								<li></li>
+								
 
 
 
@@ -147,12 +148,16 @@
 		</header><!-- Header /- -->
 		<main>
 			<!-- Page Banner -->
+
 			<div class="page-banner container-fluid no-padding">
+
 				<!-- Container -->
 				<div class="container">
+
 					<div class="banner-content">
-						<h3>Food </h3>
-						<p>On New Article, you'll find something interesting in the article about food </p>
+
+						<h3>Food</h3>
+						<p>On New Article, you'll find something interesting in the article about Travel </p>
 					</div>
 					<ol class="breadcrumb">
 						<li><a href="index.html" title="Home">Home</a></li>
@@ -170,20 +175,16 @@
 					<aside class="widget widget_search">
 						<h3 class="widget-title">Search</h3>
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search You Wants. . .">
+							<input type="text" class="form-control" placeholder="Search You Wants. . ." id="search" onkeyup="filter()">
 							<span class="input-group-btn">
 								<button class="btn btn-search" title="Search" type="button"><i
 										class="icon icon-Search"></i></button>
 							</span>
 						</div>
+						<ul id="Menu">
+							<h3 id="task-search"></h3>
+						</ul>
 					</aside><!-- Widget Search /- -->
-					<!-- Widget Categories -->
-					<aside class="widget widget_tags">
-						<h3 class="widget-title">Food</h3>
-						<div class="tags-box">
-							<h3 id="task-button"></h3>
-						</div>
-					</aside><!-- Widget Tags -->
 				</div><!-- Widget Area /- -->
 				<!-- Content Area -->
 				<div class="content-area blog-section col-md-8 col-sm-8 col-xs-12">
@@ -191,12 +192,14 @@
 
 
 						</a></h3>
-
+						
+							
 						<div class="entry-content">
 							<div class="blog-content">
 								<div id="task-container">
 
 							</div>
+						</div>
 
 						</div>
 
@@ -204,6 +207,11 @@
 
 				</div><!-- Content Area /- -->
 
+		
+		
+			
+	</div><!-- Container /- -->
+</div><!-- Latest Blog /- -->
 
 
 			</div><!-- Container /- -->

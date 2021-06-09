@@ -827,7 +827,7 @@ form.l{
 	background-color: #e4ddc6;
 	position: relative;
 	margin-bottom: 100px;
-	padding: 100px 0;
+	padding: 50px 0;
 	z-index: 1;
 }
 .page-banner .banner-content {
@@ -1214,6 +1214,8 @@ h2 {
 }
 p {
     display: block;
+	max-width: 100%;
+	height: auto;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;

@@ -53,6 +53,7 @@
 	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
 	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
 
 
 	<!--[if lt IE 9]>
@@ -127,8 +128,6 @@
 
 								</li>
 
-								<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
-								<li></li>
 
 
 
@@ -175,20 +174,16 @@
 					<aside class="widget widget_search">
 						<h3 class="widget-title">Search</h3>
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search You Wants. . .">
+							<input type="text" class="form-control" placeholder="Search You Wants. . ." id="search" onkeyup="filter()">
 							<span class="input-group-btn">
 								<button class="btn btn-search" title="Search" type="button"><i
 										class="icon icon-Search"></i></button>
 							</span>
 						</div>
+						<ul id="Menu">
+							<h3 id="task-search"></h3>
+						</ul>
 					</aside><!-- Widget Search /- -->
-					<!-- Widget Categories -->
-					<aside class="widget widget_tags">
-						<h3 class="widget-title">Travel</h3>
-						<div class="tags-box">
-							<h3 id="task-button"></h3>
-						</div>
-					</aside><!-- Widget Tags -->
 				</div><!-- Widget Area /- -->
 				<!-- Content Area -->
 				<div class="content-area blog-section col-md-8 col-sm-8 col-xs-12">
@@ -230,12 +225,18 @@
 					<aside class="col-md-3 col-sm-6 col-xs-6 ftr-widget widget_about">
 						<a href="index.html" title="Max Shop">New <span>Arrivals</span></a>
 						<div class="info">
-							<p><i class="icon icon-Pointer"></i>New arrivals office, 65 Huge Street Melbourne, 2850
-								Australia.</p>
+							<div class="footersocial">
+								<p><i class="icon icon-Pointer"></i>New arrivals office, 65 Huge Street Melbourne, 2850
+									Australia.</p>
+							</div>
+							<div class="footersocial">
 							<p><i class="icon icon-Phone2"></i><a href="tel:(11)1234567890" title="Phone"
 									class="phone">(+66) 123 456 7890</a></p>
+							</div>
+							<div class="footersocial">
 							<p><i class="icon icon-Imbox"></i><a href="mailto:info@newarrivals.com"
 									title="info@newarrivals.com">info@maxshop.com</a></p>
+							</div>
 						</div>
 					</aside><!-- Widget About /- -->
 
