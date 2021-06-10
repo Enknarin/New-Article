@@ -17,7 +17,7 @@ function filter(id){
             
             <div class="blog-content">
            
-            <img    src= "${task.Link}" width="100%" class="picepost" ></img>
+            <img    src= "${task.Link}" width="100%" class="picepostblog" ></img>
                 
             <div class="entry-content">
             <p>${task.blog}</p>

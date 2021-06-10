@@ -4,7 +4,7 @@ const taskSearch = document.getElementById('task-search');
 
 
 function filter(id){
-    var docRef = db.collection('Electrical').doc(id);
+    var docRef = db.collection('More').doc(id);
     docRef.get().then((doc) => {
         if (doc.exists) {
             console.log("Document Data", doc.data());
@@ -17,7 +17,7 @@ function filter(id){
             
             <div class="blog-content">
            
-            <img    src= "${task.Link}" width="100%" class="picepost" ></img>
+            <img    src= "${task.Link}" width="100%" class="picepostblog" ></img>
                 
             <div class="entry-content">
             <p>${task.blog}</p>
@@ -95,7 +95,7 @@ function filter(id){
         }
         
     }
-    db.collection("Electrical").get().then((querySnapshot) => {
+    db.collection("More").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             const task = doc.data();
             task.id = doc.id;
@@ -118,7 +118,7 @@ function filter(id){
     
             })
         });
-        db.collection("Electrical").get().then((querySnapshot) => {
+        db.collection("More").get().then((querySnapshot) => {
 
             querySnapshot.forEach((doc) => {
     
