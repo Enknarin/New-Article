@@ -1234,3 +1234,20 @@ p {
   height: 56pt;
   overflow: hidden;
 }
+
+.slider{
+  margin: 20px auto;
+  position: relative;
+  border: 10px solid white;
+}
+.next{
+  border-radius: 10px 0px 0px 10px;
+  position: absolute;
+  top: 45%;
+}
+.prew{
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 950px;
+  position: absolute;
+  top: 45%;
+}
