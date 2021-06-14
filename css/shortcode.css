@@ -1231,6 +1231,12 @@
   padding: 10px;
   width: 100%;
 }
+.index-post {
+  display: inline-block;
+  margin-bottom: 35px;
+  padding: 10px;
+  width: 100%;
+}
 .type-post .entry-cover {
   position: relative;
 }

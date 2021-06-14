@@ -75,8 +75,13 @@ img.indexAir {
   padding: 20px 20px;
 }
 img.picepost {
-  max-width: 100%;
+  max-width: 80%;
   height: 100px;
+  padding: 3px 3px;
+}
+img.postindex {
+  max-width: 400px;
+  height: 150px;
   padding: 3px 3px;
 }
 img.picepostblog {
@@ -1226,28 +1231,12 @@ p {
 }
 
 .box {
-  line-height: 4pt;
+  line-height: 14pt;
   height: 56pt;
+  overflow: hidden;
 }
 .box p {
   line-height: 14pt;
   height: 56pt;
   overflow: hidden;
-}
-
-.slider{
-  margin: 20px auto;
-  position: relative;
-  border: 10px solid white;
-}
-.next{
-  border-radius: 10px 0px 0px 10px;
-  position: absolute;
-  top: 45%;
-}
-.prew{
-  border-radius: 0px 10px 10px 0px;
-  margin-left: 950px;
-  position: absolute;
-  top: 45%;
 }
